@@ -1,0 +1,190 @@
+{
+    "abi": [
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "projectId",
+                    "type": "string"
+                }
+            ],
+            "name": "ProjectAdded",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_projectId",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_area",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_carbonCredits",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_estimatedValue",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_classification",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_confidenceScore",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addProject",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getProject",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "id",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "projectId",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "area",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "carbonCredits",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "estimatedValue",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "classification",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "confidenceScore",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "timestamp",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct CarbonCredit.Project",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalProjects",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "projects",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "projectId",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "area",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "carbonCredits",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "estimatedValue",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "classification",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "confidenceScore",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "address": "0xb4E6a187BE12F209C6fc27E15dDa80849681c243"
+}
